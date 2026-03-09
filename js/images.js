@@ -1,0 +1,1 @@
+const eventImages = ['https://via.placeholder.com/800x400?text=event1', 'https://via.placeholder.com/800x400?text=event2', 'https://via.placeholder.com/800x400?text=event3', 'https://via.placeholder.com/800x400?text=event4', 'https://via.placeholder.com/800x400?text=event5'];
