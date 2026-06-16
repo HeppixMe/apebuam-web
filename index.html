@@ -3,34 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apebuam - Neues Unternehmen</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Apebuam – Unvergessliche Events</title>
+    <meta name="description" content="Apebuam – Dein Partner für unvergessliche Veranstaltungen. Eventplanung mit Leidenschaft und Kreativität.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <meta name="description" content="Beschreibung des Unternehmens Apebuam">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="https://via.placeholder.com/200x100?text=Apebuam+Logo" alt="Apebuam Logo" class="logo">
-    </header>
 
-    <section class="slider-section">
-        <h2>Vergangene Veranstaltungen</h2>
-        <div class="slider-container">
-            <img id="event-slider" src="" alt="Event Bild">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="https://via.placeholder.com/120x36?text=APEBUAM" alt="Apebuam Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="#events">Events</a>
+                <a href="#about">Über uns</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Eventplanung &amp; Organisation</span>
+            <h1>Wir schaffen<br><span class="gradient-text">unvergessliche Momente</span></h1>
+            <p>Von der Idee bis zur Umsetzung – Apebuam ist dein Partner für außergewöhnliche Veranstaltungen.</p>
+            <div class="hero-cta">
+                <a href="#events" class="btn btn-primary">Unsere Events</a>
+                <a href="#contact" class="btn btn-ghost">Kontakt aufnehmen</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Events Slider -->
+    <section class="events-section" id="events">
+        <div class="section-header">
+            <span class="section-label">Portfolio</span>
+            <h2>Vergangene Veranstaltungen</h2>
+            <p>Ein Blick auf unsere schönsten Events</p>
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Vorheriges Bild">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-track">
+                    <img id="event-slider" src="" alt="Event Bild">
+                </div>
+                <button class="slider-btn next-btn" id="nextBtn" aria-label="Nächstes Bild">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
             <div class="dots" id="dots"></div>
         </div>
     </section>
 
-    <section class="description">
-        <h2>Über Apebuam</h2>
-        <p>Apebuam ist ein neu gegründetes Unternehmen, das sich auf innovative Lösungen in der Veranstaltungsbranche spezialisiert. Wir organisieren unvergessliche Events und bieten kreative Dienstleistungen für unsere Kunden.</p>
+    <!-- About -->
+    <section class="about-section" id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="section-label">Über uns</span>
+                <h2>Dein zuverlässiger Event-Partner</h2>
+                <p>Apebuam ist ein aufstrebendes Unternehmen, das sich auf die Planung und Organisation von unvergesslichen Veranstaltungen spezialisiert. Mit Leidenschaft und Kreativität bringen wir deine Vision zum Leben.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-star"></i></div>
+                        <div>
+                            <h4>Premium Qualität</h4>
+                            <p>Höchste Standards bei jedem Event</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                        <div>
+                            <h4>Mit Leidenschaft</h4>
+                            <p>Jedes Event ist uns eine Herzensangelegenheit</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <div>
+                            <h4>Schnelle Umsetzung</h4>
+                            <p>Effiziente Planung von Anfang bis Ende</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="visual-card">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Events</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Gäste</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Zufrieden</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <div class="contact-content">
+            <span class="section-label">Kontakt</span>
+            <h2>Lass uns zusammenarbeiten</h2>
+            <p>Plane deinen nächsten Event mit uns und erlebe den Unterschied</p>
+            <div class="contact-links">
+                <a href="https://instagram.com/apebuam" class="contact-card" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="tel:+49123456789" class="contact-card" title="Telefon">
+                    <i class="fas fa-phone"></i>
+                    <span>Telefon</span>
+                </a>
+                <a href="https://wa.me/49123456789" class="contact-card" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="contact">
-            <a href="https://instagram.com/apebuam" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="tel:+49123456789" title="Telefon"><i class="fas fa-phone"></i></a>
-            <a href="https://wa.me/49123456789" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <div class="footer-content">
+            <img src="https://via.placeholder.com/100x30?text=APEBUAM" alt="Apebuam" class="footer-logo">
+            <p>© 2025 Apebuam. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
